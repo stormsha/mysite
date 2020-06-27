@@ -1,0 +1,154 @@
+﻿{% extends 'base/base.html' %}
+{% block head %}
+    <meta charset="UTF-8">  <!--必须写，要不然会出现编码问题-->
+    <meta name="description" content="崔庆才的个人网站，记录生活的瞬间，分享学习的心得，感悟生活，留住感动，静静寻觅生活的美好"/>
+    <meta name="keywords" content="崔庆才,静觅,网络,IT,技术,博客,PHP"/>
+{% endblock head %}
+{% block content %}
+    <div class="pagewrapper clearfix">
+
+
+        <header class="pageheader clearfix">
+            <h1 class="pull-left">
+                <a href="https://cuiqingcai.com/message">给我留言</a>
+            </h1>
+            <div class="pull-right"><!-- 百度分享 -->
+                <span class="action action-share bdsharebuttonbox"><i class="fa fa-share-alt"></i>分享 (<span
+                        class="bds_count" data-cmd="count" title="累计分享0次">0</span>)<div class="action-popover"><div
+                        class="popover top in"><div class="arrow"></div><div class="popover-content"><a href="#"
+                                                                                                        class="sinaweibo fa fa-weibo"
+                                                                                                        data-cmd="tsina"
+                                                                                                        title="分享到新浪微博"></a><a
+                        href="#" class="bds_qzone fa fa-star" data-cmd="qzone" title="分享到QQ空间"></a><a href="#"
+                                                                                                      class="tencentweibo fa fa-tencent-weibo"
+                                                                                                      data-cmd="tqq"
+                                                                                                      title="分享到腾讯微博"></a><a
+                        href="#" class="qq fa fa-qq" data-cmd="sqq" title="分享到QQ好友"></a><a href="#"
+                                                                                           class="bds_renren fa fa-renren"
+                                                                                           data-cmd="renren"
+                                                                                           title="分享到人人网"></a><a
+                        href="#" class="bds_weixin fa fa-weixin" data-cmd="weixin" title="分享到微信"></a><a href="#"
+                                                                                                        class="bds_more fa fa-ellipsis-h"
+                                                                                                        data-cmd="more"></a></div></div></div></span>
+            </div>
+        </header>
+        <div class="article-content">
+        </div>
+        <div id="respond" class="no_webshot">
+            <form action="https://cuiqingcai.com/wp-comments-post.php" method="post" id="commentform">
+
+                <div class="comt-title">
+                    <div class="comt-avatar pull-left">
+                        <img alt='' src='../static/images/28af17f471ec4e668c9947c4760bb7c0.gif'
+                             class='avatar avatar-54 photo avatar-default' height='54' width='54'/></div>
+                    <div class="comt-author pull-left">
+                        发表我的评论
+                    </div>
+                    <a id="cancel-comment-reply-link" class="pull-right" href="javascript:;">取消评论</a>
+                </div>
+
+                <div class="comt">
+                    <div class="comt-box">
+                        <textarea placeholder="写点什么..." class="input-block-level comt-area" name="comment" id="comment"
+                                  cols="100%" rows="3" tabindex="1"
+                                  onkeydown="if(event.ctrlKey&amp;&amp;event.keyCode==13){document.getElementById('submit').click();return false};"></textarea>
+                        <div class="comt-ctrl">
+                            <button class="btn btn-primary pull-right" type="submit" name="submit" id="submit"
+                                    tabindex="5"><i class="fa fa-check-square-o"></i> 提交评论
+                            </button>
+                            <div class="comt-tips pull-right"><input type='hidden' name='comment_post_ID' value='42'
+                                                                     id='comment_post_ID'/>
+                                <input type='hidden' name='comment_parent' id='comment_parent' value='0'/>
+                            </div>
+                            <span data-type="comment-insert-smilie" class="muted comt-smilie"><i
+                                    class="fa fa-smile-o"></i> 表情</span>
+                            <span class="muted comt-mailme"><label for="comment_mail_notify" class="checkbox inline"
+                                                                   style="padding-top:0"><input type="checkbox"
+                                                                                                name="comment_mail_notify"
+                                                                                                id="comment_mail_notify"
+                                                                                                value="comment_mail_notify"
+                                                                                                checked="checked"/>有人回复时邮件通知我</label></span>
+                        </div>
+                    </div>
+
+                    <div class="comt-comterinfo" id="comment-author-info">
+                        <h4>Hi，您需要填写昵称和邮箱！</h4>
+                        <ul>
+                            <li class="form-inline"><label class="hide" for="author">昵称</label><input class="ipt"
+                                                                                                      type="text"
+                                                                                                      name="author"
+                                                                                                      id="author"
+                                                                                                      value=""
+                                                                                                      tabindex="2"
+                                                                                                      placeholder="昵称"><span
+                                    class="help-inline">昵称 (必填)</span></li>
+                            <li class="form-inline"><label class="hide" for="email">邮箱</label><input class="ipt"
+                                                                                                     type="text"
+                                                                                                     name="email"
+                                                                                                     id="email" value=""
+                                                                                                     tabindex="3"
+                                                                                                     placeholder="邮箱"><span
+                                    class="help-inline">邮箱 (必填)</span></li>
+                            <li class="form-inline"><label class="hide" for="url">网址</label><input class="ipt"
+                                                                                                   type="text"
+                                                                                                   name="url" id="url"
+                                                                                                   value="" tabindex="4"
+                                                                                                   placeholder="网址"><span
+                                    class="help-inline">网址</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+        <div id="postcomments">
+            <div id="comments">
+                <i class="fa fa-comments-o"></i> <b> (386)</b>个小伙伴在吐槽
+            </div>
+            <ol class="commentlist">
+                <li class="comment even thread-even depth-1" id="comment-191107">
+                    <div class="c-avatar"><img alt=''
+                                               data-original='https://cuiqingcai.com/avatar/9204fbfb1fbdc5ba3c4ab29713f23f55.png'
+                                               class='avatar avatar-54 photo' height='54' width='54'/>
+                        <div class="c-main" id="div-comment-191107">Propecia Utilidad Acheter Kamagra Grenoble <a
+                                href="http://leviinusa.com" rel="nofollow">generic levitra on line</a> Keflex Seismic
+                            Pipe Loop Canadian Rx Without A Script
+                            <div class="c-meta"><span class="c-author"><a href='http://cheapcial40mg.com'
+                                                                          rel='external nofollow'
+                                                                          class='url'>Lescymn</a></span>2019-02-18 12:48
+                                (8小时前)<a rel='nofollow' class='comment-reply-link'
+                                         href='https://cuiqingcai.com/message?replytocom=191107#respond'
+                                         onclick='return addComment.moveForm( "div-comment-191107", "191107", "respond", "42" )'
+                                         aria-label='回复给Lescymn'>回复</a></div>
+                        </div>
+                    </div>
+                </li><!-- #comment-## -->
+                <li class="comment odd alt thread-odd thread-alt depth-1" id="comment-188310">
+                    <div class="c-avatar"><img alt=''
+                                               data-original='https://cuiqingcai.com/avatar/ad324823ccd7576a2082debd738959b0.png'
+                                               class='avatar avatar-54 photo' height='54' width='54'/>
+                        <div class="c-main" id="div-comment-188310">medicamentos que tengan sildenafil
+                            http://viagrabs.com/ generic for viagra
+                            <div class="c-meta"><span class="c-author"><a href='http://www.viagrabs.com/'
+                                                                          rel='external nofollow'
+                                                                          class='url'>buy viagra</a></span>2019-02-16
+                                08:59 (2天前)<a rel='nofollow' class='comment-reply-link'
+                                              href='https://cuiqingcai.com/message?replytocom=188310#respond'
+                                              onclick='return addComment.moveForm( "div-comment-188310", "188310", "respond", "42" )'
+                                              aria-label='回复给buy viagra'>回复</a></div>
+                        </div>
+                    </div>
+                </li><!-- #comment-## -->
+            </ol>
+            <div class="commentnav">
+                <a class="prev page-numbers" href="https://cuiqingcai.com/message/comment-page-25#comments">«</a>
+                <a class='page-numbers' href='https://cuiqingcai.com/message/comment-page-1#comments'>1</a>
+                <span class="page-numbers dots">&hellip;</span>
+                <a class='page-numbers' href='https://cuiqingcai.com/message/comment-page-24#comments'>24</a>
+                <a class='page-numbers' href='https://cuiqingcai.com/message/comment-page-25#comments'>25</a>
+                <span aria-current='page' class='page-numbers current'>26</span></div>
+        </div>
+
+    </div>
+{% endblock content %}
