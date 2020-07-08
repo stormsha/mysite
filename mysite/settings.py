@@ -118,7 +118,8 @@ USE_TZ = True
 # 静态文件路径
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static")  # 即静态文件存放在 BASE_DIR/static 下（和manage.py同级目录下），注意BASE_DIR指django工程的绝对路径
+    # 即静态文件存放在 BASE_DIR/static 下（和manage.py同级目录下），# 注意BASE_DIR指django工程的绝对路径
+    os.path.join(BASE_DIR, "static")
 ]
 
 # 用户媒体文件路径
@@ -196,7 +197,7 @@ LOGGING = {
         }
     },
     'loggers': {
-       # 默认的logger应用如下配置
+        # 默认的logger应用如下配置
         '': {
             'handlers': ['default', 'console', 'error'],  # 上线之后可以把'console'移除
             'level': 'DEBUG',
